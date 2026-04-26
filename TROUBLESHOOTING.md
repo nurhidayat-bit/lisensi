@@ -110,7 +110,7 @@ Harus return:
    ```
 
 3. **Cek versi Node.js:**
-   - Pastikan `package.json` punya `"engines": {"node": "18.x"}`
+   - Pastikan `package.json` punya `"engines": {"node": "20.x"}`
 
 ## Kontak Support
 
