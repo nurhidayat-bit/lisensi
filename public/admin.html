@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Tambah Produk - Windows License Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">Admin Windows License Store</p>
+        <h1>Tambah Produk Baru</h1>
+        <p class="hero-lead">Masukkan detail produk baru dan simpan ke daftar lewat API.</p>
+      </div>
+      <div class="header-actions">
+        <a class="secondary-button" href="index.html">Kembali ke Toko</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="admin-section">
+      <div class="section-heading">
+        <h3>Form Tambah Produk</h3>
+        <p>Gunakan halaman ini untuk menambahkan barang baru secara terpisah.</p>
+      </div>
+      <form id="productForm" class="admin-form">
+        <label>
+          Nama Produk
+          <input type="text" id="newName" placeholder="Contoh: Windows 11 Enterprise" required />
+        </label>
+        <label>
+          Deskripsi
+          <textarea id="newDescription" placeholder="Contoh: Lisensi resmi untuk bisnis..." required></textarea>
+        </label>
+        <label>
+          Harga
+          <input type="number" id="newPrice" placeholder="Contoh: 1490000" required />
+        </label>
+        <label>
+          SKU
+          <input type="text" id="newSku" placeholder="Contoh: WIN11ENT" required />
+        </label>
+        <button type="submit" class="primary-button">Tambah Produk</button>
+        <p id="productFormMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Windows License Store • WA: 081270517527</p>
+    </div>
+  </footer>
+
+  <script src="api.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
