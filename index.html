@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windows License Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">Windows License Store</p>
+        <h1>Lisensi Windows Resmi dengan Layanan Cepat</h1>
+        <p class="hero-lead">Beli lisensi Windows Home, Pro, dan OEM langsung via WhatsApp. Aktivasi cepat, dukungan responsif.</p>
+      </div>
+      <div class="header-actions">
+        <button id="cartToggle" class="cart-button">Keranjang (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="badge">Promo WA</span>
+        <h2>Bayar langsung via WhatsApp</h2>
+        <p>Pesanan langsung diarahkan ke nomor WA kami. Cukup pilih produk, isi data singkat, dan konfirmasi pembayaran melalui WhatsApp di 081270517527.</p>
+        <div class="hero-actions">
+          <button id="startOrder" class="primary-button">Mulai Belanja</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Windows license" />
+      </div>
+    </section>
+
+    <section class="feature-row">
+      <div class="feature-card">
+        <h3>Resmi & Aman</h3>
+        <p>Lisensi valid dan langsung bisa aktivasi. Tidak ada produk bajakan atau resiko akun.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Proses Cepat</h3>
+        <p>Pembayaran via WhatsApp, kami kirim lisensi dalam hitungan menit setelah konfirmasi.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Dukungan WA</h3>
+        <p>Hubungi 081270517527 kapan saja untuk bantuan pemasangan dan aktivasi.</p>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="section-heading">
+        <h3>Produk Populer</h3>
+        <p>Pilih lisensi Windows yang paling cocok untuk perangkat Anda.</p>
+      </div>
+      <div id="productList" class="product-grid"></div>
+    </section>
+  </main>
+
+  <aside id="cartPanel" class="cart-panel">
+    <div id="cartBackdrop" class="cart-backdrop"></div>
+    <div class="cart-drawer">
+      <div class="cart-items">
+        <div class="cart-header">
+          <div>
+            <h3>Keranjang Anda</h3>
+            <p class="cart-note">Lanjutkan ke WhatsApp untuk selesaikan pembayaran.</p>
+          </div>
+          <button id="closeCart" class="close-button" aria-label="Tutup keranjang">✕</button>
+        </div>
+
+        <div id="cartView" class="cart-view">
+          <div id="cartItems" class="cart-list"></div>
+          <div class="cart-summary">
+            <p>Total:</p>
+            <strong>Rp <span id="cartTotal">0</span></strong>
+            <button id="checkoutButton" class="checkout-button">Bayar via WhatsApp</button>
+          </div>
+        </div>
+
+        <div id="checkoutSection" class="checkout-section hidden">
+          <div class="checkout-header">
+            <span class="badge">Checkout</span>
+            <h3>Pesan & Bayar via WhatsApp</h3>
+            <p class="modal-description">Isi data singkat lalu lanjutkan ke chat WA untuk menyelesaikan pembayaran.</p>
+          </div>
+          <button id="backToCart" class="secondary-button">Kembali ke Keranjang</button>
+          <form id="checkoutForm" class="checkout-form">
+            <label>
+              Nama Lengkap
+              <input type="text" id="customerName" placeholder="Contoh: Budi Santoso" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="customerEmail" placeholder="Contoh: contoh@email.com" required />
+            </label>
+            <button type="submit" class="checkout-submit">Lanjut ke WhatsApp</button>
+          </form>
+          <div id="checkoutSuccess" class="success-message hidden">
+            <h4>Pesanan siap dikirim ke WhatsApp</h4>
+            <p>Buka WhatsApp untuk menyelesaikan pembayaran dan menerima lisensi. Jika belum terbuka, klik tombol di bawah.</p>
+            <a id="checkoutWhatsappLink" class="secondary-button" target="_blank" rel="noopener">Buka WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Windows License Store • WA: 081270517527</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=6281270517527&text=Halo%20saya%20ingin%20memesan%20lisensi%20Windows" target="_blank" rel="noopener">
+    <span>Chat WA</span>
+  </a>
+
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
